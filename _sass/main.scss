@@ -1,0 +1,724 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./_utilities";
+
+@import "../node_modules/bulma/bulma";
+
+* {
+  box-sizing: border-box;
+}
+//GENERAL
+.body {
+  max-width: 100vw;
+  margin: 0;
+  font-family: $family-primary;
+  background-color: #fff;
+}
+
+.box__wrapper {
+  margin: auto;
+  margin-bottom: 5%;
+  @include for-phone {
+    width: 300px;
+  }
+  @include for-tablet-portrait {
+    width: 500px;
+  }
+  @include for-desktop {
+    width: 760px;
+  }
+  @include for-big-desktop {
+    width: 1000px;
+  }
+  @include for-tablet-landscape {
+    width: 560px;
+  }
+}
+
+.box__wrapper2 {
+  margin: auto;
+  @include for-phone {
+    width: 300px;
+    margin: 0;
+  }
+  @include for-tablet-portrait {
+    width: 500px;
+    margin: 0;
+  }
+  @include for-desktop {
+    width: 760px;
+    margin: 0;
+  }
+  @include for-big-desktop {
+    width: 1000px;
+  }
+  @include for-tablet-landscape {
+    width: 560px;
+    margin: 0;
+  }
+}
+
+.box__wrapper3 {
+  margin: auto;
+  @include for-phone {
+    width: 300px;
+    margin-right: 0;
+  }
+  @include for-tablet-portrait {
+    width: 500px;
+    margin-right: 0;
+  }
+  @include for-desktop {
+    width: 760px;
+    margin-right: 0;
+  }
+  @include for-big-desktop {
+    width: 1000px;
+  }
+  @include for-tablet-landscape {
+    width: 560px;
+    margin-right: 0;
+  }
+}
+a {
+  color: $brownish_grey;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: $brownish_grey;
+}
+// FIRST SECTION
+
+.color {
+  background-color: $purpledark;
+}
+.header {
+  background: url("../_assets/images/Adidas_Zara_web_2@3x.jpg") no-repeat center
+    center / cover;
+  height: 100vw;
+  font-family: $family-primary;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-phone {
+    background: url("../_assets/images/Adidas_Zara_web_2@2x.jpg") no-repeat
+      center center / cover;
+  }
+  @include for-big-desktop {
+    background-color: $purpledark;
+    background-image: url(../_assets/images/Adidas_Zara_web_2@3x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 74vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-tablet-portrait {
+    background: url("../_assets/images/Adidas_Zara_web_2@3x.jpg") no-repeat
+      center center / cover;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.overlay {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  @include for-phone {
+    font-size: 22px;
+  }
+  @include for-tablet-portrait {
+    font-size: 43px;
+  }
+  @include for-desktop {
+    font-size: 59px;
+  }
+  @include for-big-desktop {
+    font-size: 60px;
+  }
+  @include for-tablet-landscape {
+    font-size: 59px;
+  }
+}
+
+// BLOCK - paragraph
+.paragraph {
+  color: $brownish_grey;
+  font-style: italic;
+  font-weight: 500;
+  font-family: $family-primary;
+  @include for-phone {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.54px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  @include for-tablet-portrait {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+  }
+  @include for-tablet-landscape {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+    margin-bottom: 55px;
+    margin-top: 20px;
+  }
+
+  @include for-desktop {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+  @include for-big-desktop {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+    margin-bottom: 72px;
+    margin-top: 30px;
+  }
+}
+
+.span__purple {
+  color: $purpledark;
+  font-weight: 700;
+  font-style: italic;
+  @include for-phone {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.54px;
+  }
+  @include for-tablet-portrait {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+  }
+  @include for-desktop {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+  }
+  @include for-big-desktop {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+  }
+  @include for-tablet-landscape {
+    font-size: 25px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+  }
+}
+
+.purple__rectangle {
+  background-color: $purpledark;
+  @include for-phone {
+    width: 73%;
+    height: 5px;
+    margin-bottom: 15px;
+  }
+  @include for-tablet-portrait {
+    width: 85%;
+    height: 10px;
+    margin-bottom: 25px;
+  }
+  @include for-desktop {
+    width: 70%;
+    height: 10px;
+    margin-bottom: 38px;
+  }
+  @include for-big-desktop {
+    width: 52%;
+    height: 10px;
+    margin-bottom: 38px;
+  }
+}
+
+// For the rectangle on the opposite side
+.rectangle__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.rectangle__wrapper__right {
+  margin-right: 0;
+}
+
+.purple__title {
+  color: $purpledark;
+  font-family: $family-primary;
+  font-weight: 700;
+  font-style: italic;
+
+  @include for-phone {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+  }
+  @include for-tablet-portrait {
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: 0.76px;
+    margin-top: 20px;
+  }
+  @include for-desktop {
+    font-size: 38px;
+    line-height: 57px;
+    letter-spacing: 0.76px;
+    margin-top: 35px;
+  }
+  @include for-big-desktop {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+    margin-top: 35px;
+  }
+  @include for-tablet-landscape {
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: 0.76px;
+    margin-top: 20px;
+  }
+}
+
+.purple__subtitle {
+  color: $brownish_grey;
+  font-family: $family-secondary;
+  font-weight: 300;
+  font-style: italic;
+
+  @include for-phone {
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+  }
+  @include for-tablet-portrait {
+    font-size: 30px;
+    line-height: 57px;
+    letter-spacing: 0.76px;
+  }
+  @include for-desktop {
+    font-size: 38px;
+    line-height: 57px;
+    letter-spacing: 0.76px;
+  }
+  @include for-big-desktop {
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.8px;
+  }
+  @include for-tablet-landscape {
+    font-size: 30px;
+    line-height: 1.6;
+    letter-spacing: 0.75px;
+  }
+}
+
+// Aleksandra
+.header2 {
+  background: url("../_assets/images/Aleksandra@3x.jpg") no-repeat center center /
+    cover;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-phone {
+    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center
+      center / cover;
+    height: 53vw;
+  }
+
+  @include for-tablet-portrait {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Aleksandra@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vw;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-desktop {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Aleksandra@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 47vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-big-desktop {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Aleksandra@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 73vw;
+    height: 47vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-tablet-portrait {
+    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center
+      center / cover;
+    height: 81vw;
+    width: 100vw;
+  }
+}
+
+// Zara
+.header3 {
+  background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat
+    center center / cover;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-phone {
+    background: url("../_assets/images/Adidas_Zara_background@2x.jpg") no-repeat
+      center center / cover;
+    height: 53vw;
+  }
+
+  @include for-tablet-portrait {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vw;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  @include for-tablet-landscape {
+    background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat
+      center center / cover;
+    height: 55vw;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-desktop {
+    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 47vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-big-desktop {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 73vw;
+    height: 47vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+}
+
+.zara_photo1 {
+  height: 30%;
+  width: 30%;
+  @include for-phone {
+    margin-bottom: 23px;
+    margin-left: 45px;
+  }
+  @include for-tablet-portrait {
+    margin-bottom: 70px;
+    margin-left: 30px;
+  }
+  @include for-tablet-landscape {
+    margin-bottom: 70px;
+    margin-left: 30px;
+  }
+  @include for-desktop {
+    margin-bottom: 30px;
+    margin-left: 55px;
+  }
+  @include for-big-desktop {
+    margin-bottom: 30px;
+    margin-left: 25px;
+    height: 40%;
+    width: 40%;
+  }
+}
+.zara_photo2 {
+  height: 30%;
+  width: 30%;
+  @include for-phone {
+    margin-left: 45px;
+  }
+  @include for-tablet-portrait {
+    margin-left: 30px;
+  }
+  @include for-tablet-landscape {
+    margin-left: 30px;
+  }
+  @include for-desktop {
+    margin-left: 55px;
+  }
+  @include for-big-desktop {
+    height: 40%;
+    width: 40%;
+    margin-left: 25px;
+  }
+}
+
+// Andrea
+.header4 {
+  background: url("../_assets/images/Adidas_Andrea_background@3x.jpg") no-repeat
+    center center / cover;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-phone {
+    background: url("../_assets/images/Adidas_Andrea_background@2x.jpg")
+      no-repeat center center / cover;
+    height: 53vw;
+  }
+
+  @include for-tablet-portrait {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 58vw;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  @include for-tablet-landscape {
+    background: url("../_assets/images/Adidas_Andrea_background@3x.jpg")
+      no-repeat center center / cover;
+    height: 55vw;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-desktop {
+    background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 47vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+  @include for-big-desktop {
+    background-color: $purpledark;
+    background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 73vw;
+    height: 33vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+}
+.andrea_photo1 {
+  height: 30%;
+  width: 30%;
+  @include for-phone {
+    margin-bottom: 54px;
+    height: 25%;
+    width: 25%;
+  }
+  @include for-tablet-portrait {
+    margin-bottom: 60px;
+    height: 35%;
+    width: 35%;
+  }
+  @include for-tablet-landscape {
+    margin-bottom: 60px;
+    height: 35%;
+    width: 35%;
+  }
+  @include for-desktop {
+    margin-bottom: 20px;
+  }
+  @include for-big-desktop {
+    margin-bottom: 15px;
+    height: 30%;
+    width: 30%;
+  }
+}
+.andrea_photo2 {
+  height: 30%;
+  width: 30%;
+  @include for-phone {
+    height: 25%;
+    width: 25%;
+  }
+  @include for-tablet-portrait {
+  }
+  @include for-tablet-landscape {
+  }
+  @include for-desktop {
+  }
+  @include for-big-desktop {
+    height: 30%;
+    width: 30%;
+  }
+}
+
+.andrea_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+}
+
+.purple__rectangle2 {
+  background-color: $purpledark;
+  width: 100%;
+  height: 2px;
+}
+
+.last_rectangle_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//FOOTER
+.footer {
+  background-color: $white;
+}
+
+.text_footer {
+  color: $brownish_grey;
+  font-family: $family-secondary;
+  font-weight: 300;
+  @include for-phone {
+    font-size: 13px;
+    line-height: 1.67;
+    letter-spacing: 0.54px;
+  }
+  @include for-tablet-portrait {
+    font-size: 18px;
+    line-height: 3.33;
+    letter-spacing: 0.36px;
+  }
+  @include for-tablet-landscape {
+    font-size: 18px;
+    line-height: 3.33;
+    letter-spacing: 0.36px;
+  }
+
+  @include for-desktop {
+    font-size: 18px;
+    line-height: 3.33;
+    letter-spacing: 0.36px;
+  }
+  @include for-big-desktop {
+    font-size: 18px;
+    line-height: 3.33;
+    letter-spacing: 0.36px;
+  }
+}
+
+.amz_logo {
+  width: 10%;
+  margin-right: 5%;
+
+  @include for-phone {
+    width: 26%;
+    margin-right: 5%;
+  }
+  @include for-tablet-portrait {
+    width: 20%;
+    margin-right: 5%;
+  }
+  @include for-tablet-landscape {
+    width: 20%;
+    margin-right: 5%;
+  }
+
+  @include for-desktop {
+    width: 15%;
+    margin-right: 5%;
+  }
+  @include for-big-desktop {
+    width: 10%;
+    margin-right: 5%;
+  }
+}
+
+.sport_logo {
+  margin-right: 5%;
+
+  @include for-phone {
+    width: 42%;
+    margin-right: 5%;
+  }
+
+  @include for-tablet-portrait {
+    width: 30%;
+    margin-right: 5%;
+  }
+  @include for-tablet-landscape {
+    width: 30%;
+    margin-right: 5%;
+  }
+}
