@@ -587,13 +587,13 @@ a:hover {
   }
   @include for-tablet-portrait {
     margin-bottom: 60px;
-    height: 35%;
-    width: 35%;
+    height: 33%;
+    width: 33%;
   }
   @include for-tablet-landscape {
     margin-bottom: 60px;
-    height: 35%;
-    width: 35%;
+    height: 33%;
+    width: 33%;
   }
   @include for-desktop {
     margin-bottom: 20px;
@@ -612,8 +612,12 @@ a:hover {
     width: 25%;
   }
   @include for-tablet-portrait {
+    height: 33%;
+    width: 33%;
   }
   @include for-tablet-landscape {
+    height: 33%;
+    width: 33%;
   }
   @include for-desktop {
   }
