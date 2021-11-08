@@ -141,7 +141,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 74vw;
+    width: 100vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -466,9 +466,54 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 73vw;
-    height: 47vw;
+    height: 38vw;
     margin: auto;
     margin-bottom: 5%;
+  }
+}
+
+.header3_wrapper {
+  display: flex;
+  @include for-phone {
+    display:none;
+  }
+  @include for-tablet-portrait {
+    display: none;
+  }
+  @include for-tablet-landscape {
+ display: none;
+   
+  }
+  @include for-desktop {
+  flex-direction: column;
+  }
+  @include for-big-desktop {
+  flex-direction: column;
+  }
+}
+
+.header3_wrapper_hide {
+  display: flex;
+  @include for-phone {
+    justify-content: center;
+    align-content: baseline;
+    margin-bottom: 20px;
+  }
+  @include for-tablet-portrait {
+    justify-content: center;
+    align-content: baseline;
+    margin-bottom: 35px;
+  }
+  @include for-tablet-landscape {
+    justify-content: center;
+    align-content: baseline;
+    margin-bottom: 35px; 
+  }
+  @include for-desktop {
+  display:none;
+  }
+  @include for-big-desktop {
+    display:none;
   }
 }
 
@@ -476,16 +521,16 @@ a:hover {
   height: 30%;
   width: 30%;
   @include for-phone {
-    margin-bottom: 23px;
-    margin-left: 45px;
+    width: 41.5%;
+    margin-right: 24px;
   }
   @include for-tablet-portrait {
-    margin-bottom: 70px;
-    margin-left: 30px;
+   width: 41.5%;
+   margin-right: 10px;
   }
   @include for-tablet-landscape {
-    margin-bottom: 70px;
-    margin-left: 30px;
+    width: 41.5%;
+    margin-right: 10px;
   }
   @include for-desktop {
     margin-bottom: 30px;
@@ -494,15 +539,15 @@ a:hover {
   @include for-big-desktop {
     margin-bottom: 30px;
     margin-left: 25px;
-    height: 40%;
-    width: 40%;
+    height: 31%;
+    width: 31%;
   }
 }
 .zara_photo2 {
   height: 30%;
   width: 30%;
   @include for-phone {
-    margin-left: 45px;
+    width: 30%
   }
   @include for-tablet-portrait {
     margin-left: 30px;
@@ -514,8 +559,8 @@ a:hover {
     margin-left: 55px;
   }
   @include for-big-desktop {
-    height: 40%;
-    width: 40%;
+    height: 31%;
+    width: 31%;
     margin-left: 25px;
   }
 }
@@ -578,42 +623,37 @@ a:hover {
   }
 }
 .andrea_photo1 {
-  height: 30%;
   width: 30%;
   @include for-phone {
-    margin-bottom: 54px;
-    height: 25%;
-    width: 25%;
+    width: 41%;
+    margin-right: 20px;
   }
   @include for-tablet-portrait {
-    margin-bottom: 60px;
-    height: 33%;
-    width: 33%;
+    width: 45%;
+    margin-right: 40px;
   }
   @include for-tablet-landscape {
-    margin-bottom: 60px;
-    height: 33%;
-    width: 33%;
+    width: 45%;
+    margin-right: 40px;
   }
   @include for-desktop {
     margin-bottom: 20px;
   }
   @include for-big-desktop {
     margin-bottom: 15px;
-    height: 30%;
     width: 30%;
   }
 }
 .andrea_photo2 {
-  height: 30%;
   width: 30%;
+  height: 30%;
   @include for-phone {
-    height: 25%;
-    width: 25%;
+    width: 30%;
+    height: 30%;
   }
   @include for-tablet-portrait {
-    height: 33%;
     width: 33%;
+    height: 33%;
   }
   @include for-tablet-landscape {
     height: 33%;

@@ -11618,7 +11618,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 74vw;
+    width: 100vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -12026,9 +12026,92 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 73vw;
-    height: 47vw;
+    height: 38vw;
     margin: auto;
     margin-bottom: 5%;
+  }
+}
+
+.header3_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .header3_wrapper {
+    display: none;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .header3_wrapper {
+    display: none;
+  }
+}
+@media (max-height: 500px) {
+  .header3_wrapper {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header3_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 1025px) {
+  .header3_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header3_wrapper_hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .header3_wrapper_hide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .header3_wrapper_hide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+    margin-bottom: 35px;
+  }
+}
+@media (max-height: 500px) {
+  .header3_wrapper_hide {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header3_wrapper_hide {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .header3_wrapper_hide {
+    display: none;
   }
 }
 
@@ -12038,20 +12121,20 @@ a:hover {
 }
 @media (max-width: 500px) {
   .zara_photo1 {
-    margin-bottom: 23px;
-    margin-left: 45px;
+    width: 41.5%;
+    margin-right: 24px;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
   .zara_photo1 {
-    margin-bottom: 70px;
-    margin-left: 30px;
+    width: 41.5%;
+    margin-right: 10px;
   }
 }
 @media (max-height: 500px) {
   .zara_photo1 {
-    margin-bottom: 70px;
-    margin-left: 30px;
+    width: 41.5%;
+    margin-right: 10px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -12064,8 +12147,8 @@ a:hover {
   .zara_photo1 {
     margin-bottom: 30px;
     margin-left: 25px;
-    height: 40%;
-    width: 40%;
+    height: 31%;
+    width: 31%;
   }
 }
 
@@ -12075,7 +12158,7 @@ a:hover {
 }
 @media (max-width: 500px) {
   .zara_photo2 {
-    margin-left: 45px;
+    width: 30%;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -12095,8 +12178,8 @@ a:hover {
 }
 @media (min-width: 1025px) {
   .zara_photo2 {
-    height: 40%;
-    width: 40%;
+    height: 31%;
+    width: 31%;
     margin-left: 25px;
   }
 }
@@ -12169,28 +12252,24 @@ a:hover {
 }
 
 .andrea_photo1 {
-  height: 30%;
   width: 30%;
 }
 @media (max-width: 500px) {
   .andrea_photo1 {
-    margin-bottom: 54px;
-    height: 25%;
-    width: 25%;
+    width: 41%;
+    margin-right: 20px;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
   .andrea_photo1 {
-    margin-bottom: 60px;
-    height: 33%;
-    width: 33%;
+    width: 45%;
+    margin-right: 40px;
   }
 }
 @media (max-height: 500px) {
   .andrea_photo1 {
-    margin-bottom: 60px;
-    height: 33%;
-    width: 33%;
+    width: 45%;
+    margin-right: 40px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -12201,25 +12280,24 @@ a:hover {
 @media (min-width: 1025px) {
   .andrea_photo1 {
     margin-bottom: 15px;
-    height: 30%;
     width: 30%;
   }
 }
 
 .andrea_photo2 {
-  height: 30%;
   width: 30%;
+  height: 30%;
 }
 @media (max-width: 500px) {
   .andrea_photo2 {
-    height: 25%;
-    width: 25%;
+    width: 30%;
+    height: 30%;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
   .andrea_photo2 {
-    height: 33%;
     width: 33%;
+    height: 33%;
   }
 }
 @media (max-height: 500px) {
