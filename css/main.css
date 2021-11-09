@@ -11605,6 +11605,8 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: zoominout 30s infinite;
+          animation: zoominout 30s infinite;
 }
 @media (max-width: 500px) {
   .header {
@@ -11618,7 +11620,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 74vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -11911,11 +11913,14 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-attachment: fixed;
 }
 @media (max-width: 500px) {
   .header2 {
-    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center center/cover;
+    background: url("../_assets/images/Aleksandra.jpg") no-repeat center right 32%/cover;
     height: 53vw;
+    width: 100vw;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -11929,6 +11934,7 @@ a:hover {
     width: 100vw;
     margin: auto;
     margin-bottom: 5%;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -11957,11 +11963,19 @@ a:hover {
     margin-bottom: 5%;
   }
 }
-@media (min-width: 501px) and (max-width: 768px) {
+@media (max-height: 500px) {
   .header2 {
     background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center center/cover;
     height: 81vw;
     width: 100vw;
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 500px) {
+  .fixed_wrapper2 {
+    width: 100vw;
+    overflow: hidden;
   }
 }
 
@@ -11977,11 +11991,13 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-attachment: fixed;
 }
 @media (max-width: 500px) {
   .header3 {
-    background: url("../_assets/images/Adidas_Zara_background@2x.jpg") no-repeat center center/cover;
+    background: url("../_assets/images/Adidas_Zara_background.jpg") no-repeat right 20%/cover;
     height: 53vw;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -12196,11 +12212,14 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .header4 {
-    background: url("../_assets/images/Adidas_Andrea_background@2x.jpg") no-repeat center center/cover;
+    background: url("../_assets/images/Adidas_Andrea_background.jpg") no-repeat center center/cover;
     height: 53vw;
+    background-attachment: fixed;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
@@ -12232,7 +12251,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 47vw;
+    height: 54vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -12245,7 +12264,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 73vw;
-    height: 33vw;
+    height: 51vw;
     margin: auto;
     margin-bottom: 5%;
   }

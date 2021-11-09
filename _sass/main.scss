@@ -130,6 +130,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: zoominout 30s infinite;
+   
 
   @include for-phone {
     background: url("../_assets/images/Adidas_Zara_web_2@2x.jpg") no-repeat
@@ -141,7 +143,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 74vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -366,11 +368,14 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 
   @include for-phone {
-    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center
-      center / cover;
+    background: url("../_assets/images/Aleksandra.jpg") no-repeat center
+      right 32% / cover;
     height: 53vw;
+    width: 100vw;
+    background-attachment: fixed;
   }
 
   @include for-tablet-portrait {
@@ -383,6 +388,7 @@ a:hover {
     width: 100vw;
     margin: auto;
     margin-bottom: 5%;
+    background-attachment: fixed;
   }
   @include for-desktop {
     background-color: $purpledark;
@@ -406,14 +412,22 @@ a:hover {
     margin: auto;
     margin-bottom: 5%;
   }
-  @include for-tablet-portrait {
+  @include for-tablet-landscape {
     background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center
       center / cover;
     height: 81vw;
     width: 100vw;
+    background-attachment: fixed;
   }
 }
 
+.fixed_wrapper2 {
+
+  @include for-phone {
+  width: 100vw;
+  overflow: hidden;
+}
+}
 // Zara
 .header3 {
   background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat
@@ -422,11 +436,13 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 
   @include for-phone {
-    background: url("../_assets/images/Adidas_Zara_background@2x.jpg") no-repeat
-      center center / cover;
+    background: url("../_assets/images/Adidas_Zara_background.jpg") no-repeat
+      right 20% / cover;
     height: 53vw;
+    background-attachment: fixed;
   }
 
   @include for-tablet-portrait {
@@ -573,11 +589,14 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
+  overflow: hidden;
 
   @include for-phone {
-    background: url("../_assets/images/Adidas_Andrea_background@2x.jpg")
+    background: url("../_assets/images/Adidas_Andrea_background.jpg")
       no-repeat center center / cover;
     height: 53vw;
+    background-attachment: fixed;
   }
 
   @include for-tablet-portrait {
@@ -606,7 +625,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
-    height: 47vw;
+    height: 54vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -617,7 +636,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     width: 73vw;
-    height: 33vw;
+    height: 51vw;
     margin: auto;
     margin-bottom: 5%;
   }
