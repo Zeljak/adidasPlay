@@ -11605,10 +11605,27 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-name: zoominout;
+          animation-name: zoominout;
 }
 @media (max-width: 500px) {
   .header {
     background: url("../_assets/images/Adidas_Zara_web_2@2x.jpg") no-repeat center center/cover;
+    width: 100vw;
   }
 }
 @media (min-width: 1025px) {
@@ -11640,6 +11657,35 @@ a:hover {
           align-items: center;
 }
 
+@-webkit-keyframes zoominout {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@keyframes zoominout {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
 .overlay {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   color: #fff;
@@ -11982,7 +12028,7 @@ a:hover {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header3 {
-    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
+    background-image: url("../_assets/images/Adidas_Zara_background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
