@@ -11901,8 +11901,7 @@ a:hover {
   }
 }
 
-.header2 {
-  background: url("../_assets/images/Aleksandra@3x.jpg") no-repeat center center/cover;
+.parallax_wrapper_aleksandra {
   margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11916,21 +11915,15 @@ a:hover {
   background-attachment: fixed;
 }
 @media (max-width: 500px) {
-  .header2 {
-    background: url("../_assets/images/Aleksandra.jpg") no-repeat center right 32%/cover;
+  .parallax_wrapper_aleksandra {
     height: 53vw;
     width: 100vw;
     background-attachment: fixed;
   }
 }
 @media (min-width: 501px) and (max-width: 768px) {
-  .header2 {
+  .parallax_wrapper_aleksandra {
     background-color: #5863d7;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vw;
     width: 100vw;
     margin: auto;
     margin-bottom: 5%;
@@ -11938,12 +11931,8 @@ a:hover {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .header2 {
+  .parallax_wrapper_aleksandra {
     background-color: #5863d7;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100vw;
     height: 47vw;
     margin: auto;
@@ -11951,12 +11940,7 @@ a:hover {
   }
 }
 @media (min-width: 1025px) {
-  .header2 {
-    background-color: #5863d7;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .parallax_wrapper_aleksandra {
     width: 73vw;
     height: 47vw;
     margin: auto;
@@ -11964,11 +11948,16 @@ a:hover {
   }
 }
 @media (max-height: 500px) {
-  .header2 {
-    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center center/cover;
+  .parallax_wrapper_aleksandra {
     height: 81vw;
     width: 100vw;
     background-attachment: fixed;
+  }
+}
+
+@media (min-width: 1025px) {
+  .aleksandra_parallax {
+    height: 46.5vw;
   }
 }
 
@@ -11993,35 +11982,6 @@ a:hover {
           align-items: center;
   background-attachment: fixed;
 }
-@media (max-width: 500px) {
-  .header3 {
-    background: url("../_assets/images/Adidas_Zara_background.jpg") no-repeat right 20%/cover;
-    height: 53vw;
-    background-attachment: fixed;
-  }
-}
-@media (min-width: 501px) and (max-width: 768px) {
-  .header3 {
-    background-color: #5863d7;
-    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
-}
-@media (max-height: 500px) {
-  .header3 {
-    background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat center center/cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
-}
 @media (min-width: 769px) and (max-width: 1024px) {
   .header3 {
     background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
@@ -12045,6 +12005,23 @@ a:hover {
     height: 38vw;
     margin: auto;
     margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .zara_parallax {
+    height: 40vw;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .zara_parallax {
+    margin-bottom: 95px;
+  }
+}
+@media (max-height: 500px) {
+  .zara_parallax {
+    margin-bottom: 95px;
   }
 }
 
@@ -12200,6 +12177,17 @@ a:hover {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zara_parallax {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .zara_parallax {
+    display: none;
+  }
+}
+
 .header4 {
   background: url("../_assets/images/Adidas_Andrea_background@3x.jpg") no-repeat center center/cover;
   margin-bottom: 5%;
@@ -12214,35 +12202,6 @@ a:hover {
           align-items: center;
   background-attachment: fixed;
   overflow: hidden;
-}
-@media (max-width: 500px) {
-  .header4 {
-    background: url("../_assets/images/Adidas_Andrea_background.jpg") no-repeat center center/cover;
-    height: 53vw;
-    background-attachment: fixed;
-  }
-}
-@media (min-width: 501px) and (max-width: 768px) {
-  .header4 {
-    background-color: #5863d7;
-    background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 58vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
-}
-@media (max-height: 500px) {
-  .header4 {
-    background: url("../_assets/images/Adidas_Andrea_background@3x.jpg") no-repeat center center/cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .header4 {
@@ -12267,6 +12226,35 @@ a:hover {
     height: 51vw;
     margin: auto;
     margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .andrea_parallax {
+    height: 50vw;
+    margin-bottom: 42px;
+  }
+}
+@media (min-width: 501px) and (max-width: 768px) {
+  .andrea_parallax {
+    height: 50vw;
+    margin-bottom: 95px;
+  }
+}
+@media (max-height: 500px) {
+  .andrea_parallax {
+    height: 50vw;
+    margin-bottom: 95px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .andrea_parallax {
+    display: none;
+  }
+}
+@media (min-width: 1025px) {
+  .andrea_parallax {
+    display: none;
   }
 }
 

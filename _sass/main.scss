@@ -131,7 +131,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   animation: zoominout 30s infinite;
-   
 
   @include for-phone {
     background: url("../_assets/images/Adidas_Zara_web_2@2x.jpg") no-repeat
@@ -360,10 +359,7 @@ a:hover {
   }
 }
 
-// Aleksandra
-.header2 {
-  background: url("../_assets/images/Aleksandra@3x.jpg") no-repeat center center /
-    cover;
+.parallax_wrapper_aleksandra {
   margin-bottom: 5%;
   display: flex;
   justify-content: center;
@@ -371,8 +367,6 @@ a:hover {
   background-attachment: fixed;
 
   @include for-phone {
-    background: url("../_assets/images/Aleksandra.jpg") no-repeat center
-      right 32% / cover;
     height: 53vw;
     width: 100vw;
     background-attachment: fixed;
@@ -380,11 +374,6 @@ a:hover {
 
   @include for-tablet-portrait {
     background-color: $purpledark;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vw;
     width: 100vw;
     margin: auto;
     margin-bottom: 5%;
@@ -392,41 +381,35 @@ a:hover {
   }
   @include for-desktop {
     background-color: $purpledark;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     width: 100vw;
     height: 47vw;
     margin: auto;
     margin-bottom: 5%;
   }
   @include for-big-desktop {
-    background-color: $purpledark;
-    background-image: url("../_assets/images/Aleksandra@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 73vw;
     height: 47vw;
     margin: auto;
     margin-bottom: 5%;
   }
   @include for-tablet-landscape {
-    background: url("../_assets/images/Aleksandra@2x.jpg") no-repeat center
-      center / cover;
     height: 81vw;
     width: 100vw;
     background-attachment: fixed;
   }
 }
 
-.fixed_wrapper2 {
-
-  @include for-phone {
-  width: 100vw;
-  overflow: hidden;
+.aleksandra_parallax {
+  @include for-big-desktop {
+    height: 46.5vw;
+  }
 }
+.fixed_wrapper2 {
+  @include for-phone {
+    width: 100vw;
+    overflow: hidden;
+  }
 }
 // Zara
 .header3 {
@@ -439,32 +422,32 @@ a:hover {
   background-attachment: fixed;
 
   @include for-phone {
-    background: url("../_assets/images/Adidas_Zara_background.jpg") no-repeat
-      right 20% / cover;
-    height: 53vw;
-    background-attachment: fixed;
+    // background: url("../_assets/images/Adidas_Zara_background.jpg") no-repeat
+    //   right 20% / cover;
+    // height: 53vw;
+    // background-attachment: fixed;
   }
 
   @include for-tablet-portrait {
-    background-color: $purpledark;
-    background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
+    // background-color: $purpledark;
+    // background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: 55vw;
+    // width: 100vw;
+    // margin: auto;
+    // margin-bottom: 5%;
   }
 
-  @include for-tablet-landscape {
-    background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat
-      center center / cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
+  // // @include for-tablet-landscape {
+  // //   background: url("../_assets/images/Adidas_Zara_background@3x.jpg") no-repeat
+  // //     center center / cover;
+  // //   height: 55vw;
+  // //   width: 100vw;
+  // //   margin: auto;
+  // //   margin-bottom: 5%;
+  // }
   @include for-desktop {
     background-image: url("../_assets/images/Adidas_Zara_background@3x.jpg");
     background-position: center;
@@ -488,23 +471,35 @@ a:hover {
   }
 }
 
+.zara_parallax {
+  @include for-phone {
+    height: 40vw;
+    margin-bottom: 30px;
+  }
+  @include for-tablet-portrait {
+    margin-bottom: 95px;
+  }
+  @include for-tablet-landscape {
+    margin-bottom: 95px;
+  }
+}
+
 .header3_wrapper {
   display: flex;
   @include for-phone {
-    display:none;
+    display: none;
   }
   @include for-tablet-portrait {
     display: none;
   }
   @include for-tablet-landscape {
- display: none;
-   
+    display: none;
   }
   @include for-desktop {
-  flex-direction: column;
+    flex-direction: column;
   }
   @include for-big-desktop {
-  flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -523,13 +518,13 @@ a:hover {
   @include for-tablet-landscape {
     justify-content: center;
     align-content: baseline;
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
   }
   @include for-desktop {
-  display:none;
+    display: none;
   }
   @include for-big-desktop {
-    display:none;
+    display: none;
   }
 }
 
@@ -541,8 +536,8 @@ a:hover {
     margin-right: 24px;
   }
   @include for-tablet-portrait {
-   width: 41.5%;
-   margin-right: 10px;
+    width: 41.5%;
+    margin-right: 10px;
   }
   @include for-tablet-landscape {
     width: 41.5%;
@@ -563,7 +558,7 @@ a:hover {
   height: 30%;
   width: 30%;
   @include for-phone {
-    width: 30%
+    width: 30%;
   }
   @include for-tablet-portrait {
     margin-left: 30px;
@@ -581,6 +576,14 @@ a:hover {
   }
 }
 
+.zara_parallax {
+  @include for-desktop {
+    display: none;
+  }
+  @include for-big-desktop {
+    display: none;
+  }
+}
 // Andrea
 .header4 {
   background: url("../_assets/images/Adidas_Andrea_background@3x.jpg") no-repeat
@@ -592,33 +595,33 @@ a:hover {
   background-attachment: fixed;
   overflow: hidden;
 
-  @include for-phone {
-    background: url("../_assets/images/Adidas_Andrea_background.jpg")
-      no-repeat center center / cover;
-    height: 53vw;
-    background-attachment: fixed;
-  }
+  // @include for-phone {
+  //   // background: url("../_assets/images/Adidas_Andrea_background.jpg") no-repeat
+  //   //   center center / cover;
+  //   // height: 53vw;
+  //   // background-attachment: fixed;
+  // }
 
-  @include for-tablet-portrait {
-    background-color: $purpledark;
-    background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 58vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
+  // @include for-tablet-portrait {
+  //   // background-color: $purpledark;
+  //   // background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
+  //   // background-position: center;
+  //   // background-repeat: no-repeat;
+  //   // background-size: cover;
+  //   // height: 58vw;
+  //   // width: 100vw;
+  //   // margin: auto;
+  //   // margin-bottom: 5%;
+  // }
 
-  @include for-tablet-landscape {
-    background: url("../_assets/images/Adidas_Andrea_background@3x.jpg")
-      no-repeat center center / cover;
-    height: 55vw;
-    width: 100vw;
-    margin: auto;
-    margin-bottom: 5%;
-  }
+  // @include for-tablet-landscape {
+  //   background: url("../_assets/images/Adidas_Andrea_background@3x.jpg")
+  //     no-repeat center center / cover;
+  //   height: 55vw;
+  //   width: 100vw;
+  //   margin: auto;
+  //   margin-bottom: 5%;
+  // }
   @include for-desktop {
     background-image: url("../_assets/images/Adidas_Andrea_background@3x.jpg");
     background-position: center;
@@ -641,6 +644,28 @@ a:hover {
     margin-bottom: 5%;
   }
 }
+
+.andrea_parallax {
+  @include for-phone {
+    height: 50vw;
+    margin-bottom: 42px;
+  }
+  @include for-tablet-portrait {
+    height: 50vw;
+    margin-bottom: 95px;
+  }
+  @include for-tablet-landscape {
+    height: 50vw;
+    margin-bottom: 95px;
+  }
+  @include for-desktop {
+    display: none;
+  }
+  @include for-big-desktop {
+    display: none;
+  }
+}
+
 .andrea_photo1 {
   width: 30%;
   @include for-phone {
