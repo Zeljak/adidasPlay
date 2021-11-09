@@ -130,7 +130,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: zoominout 30s infinite;
+
 
   @include for-phone {
     background: url("../_assets/images/Adidas_Zara_web_2@2x.jpg") no-repeat
@@ -389,7 +389,7 @@ a:hover {
   }
   @include for-big-desktop {
     width: 73vw;
-    height: 47vw;
+    height: 41vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -402,7 +402,7 @@ a:hover {
 
 .aleksandra_parallax {
   @include for-big-desktop {
-    height: 46.5vw;
+    height: 40.5vw;
   }
 }
 .fixed_wrapper2 {

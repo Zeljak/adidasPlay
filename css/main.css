@@ -11605,8 +11605,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: zoominout 30s infinite;
-          animation: zoominout 30s infinite;
 }
 @media (max-width: 500px) {
   .header {
@@ -11942,7 +11940,7 @@ a:hover {
 @media (min-width: 1025px) {
   .parallax_wrapper_aleksandra {
     width: 73vw;
-    height: 47vw;
+    height: 41vw;
     margin: auto;
     margin-bottom: 5%;
   }
@@ -11957,7 +11955,7 @@ a:hover {
 
 @media (min-width: 1025px) {
   .aleksandra_parallax {
-    height: 46.5vw;
+    height: 40.5vw;
   }
 }
 
